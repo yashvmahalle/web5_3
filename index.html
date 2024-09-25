@@ -1,0 +1,197 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Maggi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 80px;
+            background-color: #fdd835;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .sidebar img {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #000;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .sidebar a i {
+            font-size: 24px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            background-color: #fff;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .login-section, .register-section {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+        }
+        .login-section {
+            border-right: 1px solid #ccc;
+            padding-right: 20px;
+        }
+        .register-section {
+            padding-left: 20px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+        }
+        .facebook {
+            background-color: #3b5998;
+            color: #fff;
+        }
+        .google {
+            background-color: #db4437;
+            color: #fff;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .login-button {
+            background-color: #ccc;
+            color: #000;
+        }
+        .register-button {
+            background-color: #333;
+            color: #fff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        li i {
+            color: #8bc34a;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #4e342e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-icons {
+            margin-bottom: 20px;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        .languages {
+            margin-bottom: 20px;
+        }
+        .languages a {
+            color: #fff;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNzydTMbxRydJM4nNQ9JLkGCfTOzBYksv0Q&s" alt="Maggi logo" width="60" height="60">
+            <a href="#"><i class="fas fa-utensils"></i><br>Recipes</a>
+            <a href="#"><i class="fas fa-home"></i><br>Maggi</a>
+            <a href="#"><i class="fas fa-calendar-alt"></i><br>MyMenu Plan</a>
+            <a href="#"><i class="fas fa-search"></i><br>Search</a>
+            <a href="#"><i class="fas fa-user"></i><br>Login</a>
+        </div>
+        <div class="main-content">
+            <div class="login-section">
+                <h1>My Maggi</h1>
+                <h2>Welcome back!</h2>
+                <button class="facebook"><i class="fab fa-facebook-f"></i> Sign in with Facebook</button>
+                <button class="google"><i class="fab fa-google"></i> Sign in with Google</button>
+                <input type="email" placeholder="Enter your e-mail address here *">
+                <input type="password" placeholder="Enter your password here *">
+                <button class="login-button">Login via e-mail</button>
+                <a href="#">Forgot your password?</a>
+            </div>
+            <div class="register-section">
+                <h2>Not registered yet?</h2>
+                <button class="register-button">Register</button>
+                <h3>Join Maggi today!</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Your personal newsletter with exciting recipes and ideas</li>
+                    <li><i class="fas fa-check-circle"></i> Personalize your newsletter to your preferences</li>
+                    <li><i class="fas fa-check-circle"></i> Get to know about Maggi products</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="languages">
+            <a href="#">EN</a>
+            <a href="#">HI</a>
+            <a href="#">MR</a>
+            <a href="#">TE</a>
+            <a href="#">KN</a>
+        </div>
+        <div class="links">
+            <a href="#">Contact Us</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Copyright</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</body>
+</html>
